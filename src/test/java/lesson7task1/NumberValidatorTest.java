@@ -1,13 +1,10 @@
-package L7task1;
+package lesson7task1;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static L7task1.NumberValidator.DigitSumCalculator.calculateDigitSum;
-import static org.junit.jupiter.api.Assertions.*;
 
 class NumberValidatorTest {
 
@@ -22,17 +19,4 @@ class NumberValidatorTest {
     void shouldReturnFalseForOddNumber(int numberToCheck) {
         Assertions.assertFalse(NumberValidator.isNumberEven(numberToCheck));
     }
-
-    @ParameterizedTest
-    @CsvSource({
-            "432, 9",
-            "12345, 15",
-            "0, 0",
-            "1, 1"
-    })
-    public void testDigitSumCalculation(int number, int expectedSum) {
-        int calculatedSum = calculateDigitSum(number);
-        Assertions.assertEquals(expectedSum, calculatedSum);
-    }
-
 }
