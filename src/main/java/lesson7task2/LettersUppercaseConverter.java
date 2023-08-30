@@ -1,7 +1,7 @@
-package L7task2;
+package lesson7task2;
 
-public class LettersUppercase {
-    public static String lettersConvertUppercase(String text) {
+public class LettersUppercaseConverter {
+    public static String ConvertToUppercase(String text) {
 
         if (text == null) {
             return "The text is null";
