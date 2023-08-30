@@ -1,4 +1,4 @@
-package L7task5;
+package lesson7task5;
 
 public enum Season {
     WINTER,

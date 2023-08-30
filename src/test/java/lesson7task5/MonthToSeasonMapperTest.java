@@ -1,4 +1,4 @@
-package L7task5;
+package lesson7task5;
 
 
 import org.junit.jupiter.api.Assertions;
@@ -12,7 +12,7 @@ class MonthToSeasonMapperTest {
 
     @ParameterizedTest
     @EnumSource(Month.class)
-    public void testMapMonthToSeason(Month month) {
+    public void shouldReturnMapMonthToSeason(Month month) {
 
         Season mappedSeason = MonthToSeasonMapper.mapMonthToSeason(month);
 

@@ -1,4 +1,4 @@
-package L7task5;
+package lesson7task5;
 
 import java.time.Month;
 
@@ -25,11 +25,5 @@ public class MonthToSeasonMapper {
             default:
                 throw new IllegalArgumentException("Invalid month: " + month);
         }
-    }
-
-    public static void main(String[] args) {
-        Month january = Month.JANUARY;
-        Season mappedSeason = mapMonthToSeason(january);
-        System.out.println("January corresponds to " + mappedSeason);
     }
 }
