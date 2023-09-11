@@ -19,7 +19,7 @@ class LettersUppercaseConverterTest {
     @NullAndEmptySource
     public void shouldReturnConvertToUpperCaseWithNullAndEmpty(String text) {
         String result = LettersUppercaseConverter.ConvertToUppercase(null);
-        Assertions.assertEquals("The text is null", result);
+        Assertions.assertEquals("", result);
     }
 
 }
